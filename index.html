@@ -437,6 +437,17 @@
     50% { box-shadow: 0 8px 40px rgba(21,101,192,0.65); }
   }
   .floating-phone:hover { background: var(--blue-mid); transform: translateY(-3px); }
+  .floating-line {
+    position: fixed; bottom: 5.5rem; right: 2rem; z-index: 200;
+    background: #06C755; color: white;
+    font-weight: 700; font-size: 14px; letter-spacing: 1px;
+    padding: 12px 22px; border-radius: 8px;
+    text-decoration: none;
+    box-shadow: 0 8px 32px rgba(6,199,85,0.4);
+    transition: all 0.2s;
+    display: flex; align-items: center; gap: 8px;
+  }
+  .floating-line:hover { background: #05a847; transform: translateY(-3px); }
 
   @media (max-width: 768px) {
     section { padding: 60px 1.5rem; }
@@ -629,7 +640,7 @@
     <p class="hero-sub">永豐當舖三十年專業評估，當日快速撥款。黃金珠寶、精品名錶、3C電子，各類物品均可收當，利率透明合理。</p>
     <div class="hero-btns">
       <a href="#contact" class="btn-white">免費估價諮詢</a>
-      <a href="#items" class="btn-ghost">收當物品一覽</a>
+      <a href="#services" class="btn-ghost">收當物品一覽</a>
     </div>
     <div class="hero-stats">
       <div class="hero-stat">
@@ -718,13 +729,13 @@
     </div>
     <div class="service-card">
       <div class="service-img">
-        <img src="https://images.unsplash.com/photo-1610375461246-83df859d849d?w=600&q=80" alt="黃金珠寶">
+        <img src="https://images.unsplash.com/photo-1610375461246-83df859d849d?w=600&q=80" alt="黃金">
         <div class="service-img-overlay"></div>
         <span class="service-img-badge">當日付現</span>
       </div>
       <div class="service-body">
-        <h3>黃金珠寶</h3>
-        <p>依即時金價計算，K金、足金、鑽戒、翡翠均可估價收購，價格公道透明即時兌現。</p>
+        <h3>黃金</h3>
+        <p>依即時金價計算，金條、金飾均可收當或收購。專業評估不收手續費。</p>
         <span class="service-rate">即時金價計算</span>
       </div>
     </div>
@@ -737,19 +748,19 @@
       <div class="service-body">
         <h3>精品名錶鑑定</h3>
         <p>ROLEX、OMEGA、PATEK PHILIPPE等精品名錶，專業鑑定師評估，給予最合理市場行情。</p>
-        <span class="service-rate">品牌名錶專區</span>
+        <span class="service-rate">專業鑑定</span>
       </div>
     </div>
     <div class="service-card">
       <div class="service-img">
-        <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=600&q=80" alt="3C 電子收當">
+        <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=600&q=80" alt="不動產一二胎代辦">
         <div class="service-img-overlay"></div>
-        <span class="service-img-badge">即時報價</span>
+        <span class="service-img-badge">專業代辦</span>
       </div>
       <div class="service-body">
-        <h3>3C 電子收當</h3>
-        <p>iPhone、MacBook等3C產品，快速估價，不限品牌型號，均可來電詢問報價。</p>
-        <span class="service-rate">各品牌均可</span>
+        <h3>不動產一二胎代辦</h3>
+        <p>提供不動產一胎、二胎貸款代辦服務，手續透明、利率合理，協助您快速取得資金周轉，歡迎來電洽詢。</p>
+        <span class="service-rate">快速撥款</span>
       </div>
     </div>
   </div>
@@ -855,7 +866,7 @@
       </div>
       <div class="map-wrap">
         <iframe
-          src="https://maps.google.com/maps?q=23.9853584,120.6853582&z=17&output=embed"
+          src="https://maps.google.com/maps?q=永豐當舖+南投縣草屯鎮博愛路419號&z=17&output=embed"
           width="100%" height="240" style="border:0;" allowfullscreen="" loading="lazy"
           referrerpolicy="no-referrer-when-downgrade">
         </iframe>
@@ -898,6 +909,10 @@
 </footer>
 
 <!-- FLOATING BTN -->
+<a class="floating-line" href="https://line.me/R/ti/p/@chj1996d" target="_blank">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63.349 0 .631.285.631.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.281.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.070 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg>
+  LINE 聯絡
+</a>
 <a class="floating-phone" href="tel:0923364688">
   📞 立即來電
 </a>
