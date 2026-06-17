@@ -442,12 +442,11 @@
     section { padding: 60px 1.5rem; }
     nav { padding: 0 1.5rem; }
     .nav-links { display: none; }
-    .hero-content { padding: 0 1.5rem; }
+    .hero-content { padding: 2.5rem 1.5rem 1.5rem; }
     .trust-bar { padding: 14px 1.5rem; }
     .contact-grid { grid-template-columns: 1fr; gap: 2rem; }
     footer { flex-direction: column; text-align: center; padding: 2rem 1.5rem; }
     .footer-links { justify-content: center; }
-    .awards-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
   }
 
   /* ── AWARDS ── */
@@ -541,7 +540,13 @@
     animation: fadeUp 0.9s ease both;
   }
   @media (max-width: 768px) {
-    .hero-content { padding: 0 1.5rem; }
+    .hero-content { padding: 2.5rem 1.5rem 1.5rem; }
+    .awards-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+    .contact-row { height: auto; padding: 12px 14px; }
+    .line-contact-block { flex-direction: column; align-items: center; text-align: center; padding: 1.5rem 1rem; gap: 1.25rem; }
+    .line-qr-wrap { width: 130px; height: 130px; }
+    .line-id { font-size: 22px; }
+    .line-btn { width: 100%; justify-content: center; }
   }
 
 
